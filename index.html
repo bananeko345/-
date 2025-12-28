@@ -1,173 +1,101 @@
-/* ===== 全体 ===== */
-body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
-  color: white;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>一味サーバー | Minecraft</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* ===== Discordボタン（右上固定） ===== */
-.discord-btn {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  background: #5865F2;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-  transition: 0.2s;
-  z-index: 9999;
-}
+<!-- Discordボタン（右上固定） -->
+<a href="https://discord.gg/kdpy2hMDR6" class="discord-btn" target="_blank">
+  Discord
+</a>
 
-.discord-btn:hover {
-  transform: scale(1.1);
-  background: #4752c4;
-}
+<!-- ===== トップ（1ページ目） ===== -->
+<header class="top">
+  <div class="top-container">
 
-/* ===== トップページ ===== */
-.top {
-  background: linear-gradient(135deg, #ff512f, #dd2476);
-  padding: 50px 20px;
-}
+    <!-- 左：画像 -->
+    <div class="top-image">
+      <img src="https://raw.githubusercontent.com/bananeko345/-/refs/heads/main/IMG_2556.png" alt="一味サーバー">
+    </div>
 
-.top-container {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
+    <!-- 右：テキスト -->
+    <div class="top-text">
+      <h1>🔥 一味サーバー 🔥</h1>
+      <p>
+        Java / 統合版 両対応<br>
+        みんなで遊べるマイクラサーバー！
+      </p>
+    </div>
 
-/* 左の画像 */
-.top-image img {
-  width: 260px;
-  max-width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-}
+  </div>
+</header>
 
-/* 右のテキスト */
-.top-text h1 {
-  font-size: 42px;
-  margin: 0;
-}
+<!-- ===== サーバー情報 ===== -->
+<section>
+  <h2>🎮 サーバー情報</h2>
+  <ul style="list-style:none;padding:0;">
+    <li>✅ Java版 / 統合版 対応</li>
+    <li>🌍 Aternosサーバー</li>
+    <li>👥 誰でも参加OK</li>
+  </ul>
+</section>
 
-.top-text p {
-  font-size: 18px;
-  opacity: 0.95;
-}
+<!-- ===== 参加方法 ===== -->
+<section>
+  <h2>🚪 参加方法</h2>
 
-/* ===== 共通セクション ===== */
-section {
-  margin: 30px auto;
-  padding: 25px;
-  max-width: 800px;
-  background: rgba(255,255,255,0.12);
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-  text-align: center;
-}
+  <div class="join-box java">
+    <h3>🟩 Java版</h3>
+    <p>IP</p>
+    <code>ichimiserver.aternos.me</code>
+  </div>
 
-section h2 {
-  margin-top: 0;
-}
+  <div class="join-box bedrock">
+    <h3>🟦 統合版</h3>
+    <p>IP</p>
+    <code>ichimiserver.aternos.me</code>
+    <p>ポート</p>
+    <code>49386</code>
+  </div>
+</section>
 
-/* ===== 参加方法 ===== */
-.join-box {
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 15px;
-  max-width: 400px;
-}
+<!-- ===== 運営募集（③番） ===== -->
+<section>
+  <h2>🛠️ 運営募集</h2>
+  <p>
+    一味サーバーを一緒に作ってくれる<br>
+    仲間を募集しています！
+  </p>
 
-.join-box.java {
-  background: rgba(0, 200, 0, 0.25);
-}
+  <a href="recruit.html" style="
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 24px;
+    background:#00e676;
+    color:black;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+  ">
+    ▶ 運営募集ページへ
+  </a>
+</section>
 
-.join-box.bedrock {
-  background: rgba(0, 100, 255, 0.25);
-}
+<!-- ===== ルール ===== -->
+<section>
+  <h2>📜 ルール</h2>
+  <p>・荒らし禁止</p>
+  <p>・暴言禁止</p>
+  <p>・みんな仲良く！</p>
+</section>
 
-code {
-  display: inline-block;
-  margin: 8px;
-  padding: 10px 15px;
-  background: rgba(0,0,0,0.5);
-  border-radius: 10px;
-  font-size: 16px;
-}
+<footer>
+  <p>© 一味サーバー</p>
+</footer>
 
-/* ===== サブヘッダー（運営募集ページ） ===== */
-.sub-header {
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #232526, #414345);
-  text-align: center;
-}
-
-.sub-header h1 {
-  margin: 0;
-  font-size: 34px;
-}
-
-/* ===== 募集ボックス ===== */
-.recruit-box {
-  margin: 20px auto;
-  padding: 22px;
-  max-width: 520px;
-  background: rgba(255,255,255,0.15);
-  border-radius: 18px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
-}
-
-.recruit-box h3 {
-  margin-top: 0;
-}
-
-.recruit-box p {
-  opacity: 0.9;
-}
-
-.recruit-box a {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 20px;
-  background: #00c853;
-  color: black;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-.recruit-box a:hover {
-  transform: scale(1.08);
-  background: #00e676;
-}
-
-/* ===== フッター ===== */
-footer {
-  margin: 40px 0 20px;
-  text-align: center;
-  opacity: 0.7;
-  font-size: 14px;
-}
-
-/* ===== スマホ対応 ===== */
-@media (max-width: 700px) {
-  .top-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .top-text h1 {
-    font-size: 32px;
-  }
-
-  .discord-btn {
-    padding: 10px 14px;
-    font-size: 14px;
-  }
-}
+</body>
+</html>

@@ -1,3 +1,4 @@
+/* ===== 全体 ===== */
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
@@ -5,7 +6,7 @@ body {
   color: white;
 }
 
-/* Discordボタン */
+/* ===== Discordボタン（右上固定） ===== */
 .discord-btn {
   position: fixed;
   top: 15px;
@@ -18,7 +19,7 @@ body {
   font-weight: bold;
   box-shadow: 0 5px 15px rgba(0,0,0,0.5);
   transition: 0.2s;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .discord-btn:hover {
@@ -26,14 +27,14 @@ body {
   background: #4752c4;
 }
 
-/* トップ */
+/* ===== トップページ ===== */
 .top {
   background: linear-gradient(135deg, #ff512f, #dd2476);
   padding: 50px 20px;
 }
 
 .top-container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -59,7 +60,7 @@ body {
   opacity: 0.95;
 }
 
-/* セクション */
+/* ===== 共通セクション ===== */
 section {
   margin: 30px auto;
   padding: 25px;
@@ -70,6 +71,11 @@ section {
   text-align: center;
 }
 
+section h2 {
+  margin-top: 0;
+}
+
+/* ===== 参加方法 ===== */
 .join-box {
   margin: 20px auto;
   padding: 20px;
@@ -78,22 +84,70 @@ section {
 }
 
 .join-box.java {
-  background: rgba(0, 200, 0, 0.2);
+  background: rgba(0, 200, 0, 0.25);
 }
 
 .join-box.bedrock {
-  background: rgba(0, 100, 255, 0.2);
+  background: rgba(0, 100, 255, 0.25);
 }
 
 code {
   display: inline-block;
   margin: 8px;
   padding: 10px 15px;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.5);
   border-radius: 10px;
   font-size: 16px;
 }
 
+/* ===== サブヘッダー（運営募集ページ） ===== */
+.sub-header {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #232526, #414345);
+  text-align: center;
+}
+
+.sub-header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+/* ===== 募集ボックス ===== */
+.recruit-box {
+  margin: 20px auto;
+  padding: 22px;
+  max-width: 520px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+.recruit-box h3 {
+  margin-top: 0;
+}
+
+.recruit-box p {
+  opacity: 0.9;
+}
+
+.recruit-box a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: #00c853;
+  color: black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.recruit-box a:hover {
+  transform: scale(1.08);
+  background: #00e676;
+}
+
+/* ===== フッター ===== */
 footer {
   margin: 40px 0 20px;
   text-align: center;
@@ -101,7 +155,7 @@ footer {
   font-size: 14px;
 }
 
-/* 📱 スマホ対応 */
+/* ===== スマホ対応 ===== */
 @media (max-width: 700px) {
   .top-container {
     flex-direction: column;
@@ -110,5 +164,10 @@ footer {
 
   .top-text h1 {
     font-size: 32px;
+  }
+
+  .discord-btn {
+    padding: 10px 14px;
+    font-size: 14px;
   }
 }

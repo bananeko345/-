@@ -1,26 +1,97 @@
 body {
   margin: 0;
-  font-family: sans-serif;
-  background: linear-gradient(#1e1e2f, #000);
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
   color: white;
   text-align: center;
 }
 
+/* ヘッダー */
 header {
-  padding: 40px;
-  background: #ff4500;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
 }
 
+header h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* セクション */
 section {
-  margin: 30px;
-  padding: 20px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 15px;
+  margin: 30px auto;
+  padding: 25px;
+  max-width: 800px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
+h2 {
+  margin-top: 0;
+}
+
+/* 参加ボックス */
+.join-box {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 400px;
+}
+
+.join-box.java {
+  background: rgba(0, 200, 0, 0.2);
+}
+
+.join-box.bedrock {
+  background: rgba(0, 100, 255, 0.2);
+}
+
+code {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 15px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* Discordボタン */
+.discord-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #5865F2;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  transition: 0.2s;
+  z-index: 999;
+}
+
+.discord-btn:hover {
+  transform: scale(1.1);
+  background: #4752c4;
+}
+
+/* フッター */
 footer {
-  margin-top: 40px;
-  padding: 10px;
-  font-size: 14px;
+  margin: 40px 0 20px;
   opacity: 0.7;
+  font-size: 14px;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 30px;
+  }
 }
